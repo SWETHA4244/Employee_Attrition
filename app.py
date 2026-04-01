@@ -4,9 +4,9 @@ import pandas as pd
 import numpy as np
 
 #Load the model and label encoder
-model=joblib.load("/Users/swetha/Desktop/lit/project 1/model_attrition.pkl")
-label_encoder=joblib.load("/Users/swetha/Desktop/lit/project 1/attrition_encoder.pkl")
-feature_columns=joblib.load("/Users/swetha/Desktop/lit/project 1/feature_columns.pkl")
+model=joblib.load("model_attrition.pkl")
+label_encoder=joblib.load("attrition_encoder.pkl")
+feature_columns=joblib.load("feature_columns.pkl")
 
 st.title("Employee Attrition Prediction")
 st.markdown("Enter the employee details to predict if they are"
