@@ -38,6 +38,7 @@ user_input['OverTime']=user_input['OverTime'].map({'Yes':1, 'No':0})
 #Predict the attribution
 if st.button("Predict Attribution"):
     prediction = model.predict(user_input)
+    probability = model.predict_proba(user_input)
     if prediction[0]==1:
         st.error("The employee is likely to leave the company.")
     else:
