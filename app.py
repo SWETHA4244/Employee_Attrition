@@ -30,7 +30,7 @@ def get_user_input():
             data[feat]=inputs[feat]
         else:
             data[feat]=0 #Default value for missing features
-        return pd.DataFrame(data,index=[0])
+    return pd.DataFrame(data,index=[0])
 
 user_input=get_user_input()
 user_input['OverTime']=user_input['OverTime'].map({'Yes':1, 'No':0})
