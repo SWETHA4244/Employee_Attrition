@@ -42,4 +42,4 @@ if st.button("Predict Attribution"):
         st.error("The employee is likely to leave the company.")
     else:
         st.success("The employee is likely to stay with the company.")
-    st.info(f"Prediction Probability:{probability:.2f}")
+    st.info(f"Prediction Probability:{probability:.2f}") 
